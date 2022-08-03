@@ -22,6 +22,7 @@ Notably, however, these scripts make use of the huggingface transformers library
 
 ## Model Training and Evaluation Statistics 
 - trainmodel.py: Trains the desired BERT model, using the the desired datasets, outputting the saved model to desired location. 
+- finetunemodel.py: Script used for hyperparameter tuning BERT models 
 - evalmodel-bootstrap.py: Loads a saved model, runs predictions over a validation set of your choosing, and computes performance metrics of validation loss, accuracy, F1-score, and classification report per class usin seqeval package. Includes bootstrapping to desired number of replicates to produced 95% confidence intervals. 
 - regex_label.py: script for running the baseline model on either the test set or the outset to produce predictions 
 
