@@ -25,6 +25,7 @@ Notably, however, these scripts make use of the huggingface transformers library
 - finetunemodel.py: Script used for hyperparameter tuning BERT models 
 - evalmodel-bootstrap.py: Loads a saved model, runs predictions over a validation set of your choosing, and computes performance metrics of validation loss, accuracy, F1-score, and classification report per class usin seqeval package. Includes bootstrapping to desired number of replicates to produced 95% confidence intervals. 
 - regex_label.py: script for running the baseline model on either the test set or the outset to produce predictions 
+- sklearn-ner-models.py: supplemental work exploring random forests and decision trees to perform this task 
 
 ## Model Error Analysis with Prodigy 
 The purpose of this set of scripts is to be able to use a user-friendly interface for annotating notes (Prodigy, https://prodi.gy/), to visualize, evaluate, and correct our models' output predictions. The goal is to take a sample of the model's predictions on the validation set, load into Prodigy, view which words are highlighted as entities, and correct these predictions. Then we can evaluate how close the model's predictions are to the human-level "ground truth". This extra step is important because the model isn't trained on human-level ground truth labels, but rather on this weakly-supervised labels as described above in preprocessing steps. 
